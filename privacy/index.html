@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy — Escalivo</title>
     <meta name="description" content="Privacy Policy for Escalivo.">
+    <link rel="icon" type="image/png" href="../favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <style>
         .legal-content {
             padding: 160px 0 80px;
@@ -38,6 +39,20 @@
         .legal-content li {
             margin-bottom: 8px;
         }
+        /* Override nav for light background on this page */
+        .navbar.scrolled {
+            background: rgba(232, 232, 236, 0.95);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+        }
+        .navbar.scrolled .nav-links a {
+            color: var(--text-dark);
+        }
+        .navbar.scrolled .nav-links a:hover {
+            color: var(--primary);
+        }
+        .navbar.scrolled .mobile-menu-btn span {
+            background: var(--text-dark);
+        }
     </style>
 </head>
 <body>
@@ -45,15 +60,15 @@
     <!-- NAVIGATION -->
     <nav class="navbar scrolled" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="logo.jpg" alt="Escalivo Logo" class="nav-logo-img">
+            <a href="../" class="nav-logo">
+                <img src="../logo.jpg" alt="Escalivo Logo" class="nav-logo-img">
             </a>
             <ul class="nav-links">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#cta-section">Contact</a></li>
+                <li><a href="../#about">About</a></li>
+                <li><a href="../#services">Services</a></li>
+                <li><a href="../#cta-section">Contact</a></li>
             </ul>
-            <a href="https://calendly.com/abdelrhmanahmed-myp1/15min" target="_blank" class="nav-cta-btn">Book a Call →</a>
+            <a href="https://calendly.com/abdelrhmanahmed-myp1/new-meeting" target="_blank" class="nav-cta-btn">Book a Call →</a>
             <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -66,7 +81,7 @@
     <main class="legal-content">
         <div class="nav-container" style="display: block;">
             <h1>Privacy Policy</h1>
-            <p>Last updated: May 2026</p>
+            <p>Last updated: July 2026</p>
             
             <p>This Privacy Policy describes how Escalivo ("we," "us," or "our") collects, uses, and shares your personal information when you visit or interact with our website.</p>
 
@@ -106,14 +121,14 @@
     <footer class="footer" id="footer">
         <div class="footer-container">
             <div class="footer-logo-area">
-                <img src="logo.jpg" alt="Escalivo Logo" class="footer-logo-img">
-                <p class="footer-tagline">B2C SaaS Marketing Agency</p>
+                <img src="../logo.jpg" alt="Escalivo Logo" class="footer-logo-img">
+                <p class="footer-tagline">B2B SaaS Marketing Agency</p>
             </div>
             <div class="footer-links">
-                <a href="index.html#about">About</a>
-                <a href="index.html#services">Services</a>
-                <a href="index.html#cta-section">Contact</a>
-                <a href="privacy.html">Privacy Policy</a>
+                <a href="../#about">About</a>
+                <a href="../#services">Services</a>
+                <a href="../#cta-section">Contact</a>
+                <a href="./">Privacy Policy</a>
             </div>
             <div class="footer-socials">
                 <a href="https://www.linkedin.com/in/abdelrahmanahmedeg" target="_blank" aria-label="LinkedIn" class="social-icon">
@@ -132,6 +147,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
