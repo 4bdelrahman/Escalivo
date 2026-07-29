@@ -1,0 +1,19 @@
+# Escalivo
+
+> Escalivo is a founder-led outbound distribution company for B2B SaaS businesses.
+
+Escalivo builds and operates signal-driven systems that help validated B2B SaaS companies reach appropriate buyers and book qualified sales conversations.
+
+## Core pages
+
+- [Homepage](https://escalivo.com/): Offer, ideal client profile, nine-step method, founder, FAQs, and strategy-call booking.
+- [Method](https://escalivo.com/#method): The nine-step distribution system.
+- [About](https://escalivo.com/#about): Founder information.
+- [FAQ](https://escalivo.com/#faq): Qualification, engagement, timing, and strategy-call answers.
+- [Privacy policy](https://escalivo.com/privacy.html): Privacy information.
+
+## Contact
+
+- Email: hello@escalivo.com
+- Strategy call: https://cal.com/escalivo/discovery-call
+- Founder: Abdelrahman Ahmed

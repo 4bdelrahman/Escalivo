@@ -1,0 +1,16 @@
+{
+  "name": "Escalivo",
+  "short_name": "Escalivo",
+  "description": "Signal-driven outbound distribution for B2B SaaS.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f4f0",
+  "theme_color": "#4045ff",
+  "icons": [
+    {
+      "src": "/assets/escalivo-mark-transparent.png",
+      "sizes": "85x75",
+      "type": "image/png"
+    }
+  ]
+}

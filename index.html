@@ -1,112 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escalivo — 1000 Qualified Booked Demos for B2B SaaS</title>
-    <meta name="description" content="Escalivo helps B2B SaaS founders get 1000 qualified booked demos in 120 days using our 9-step killer distribution process.">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      document.documentElement.classList.replace("no-js", "js");
+      try {
+        const forceIntro = new URLSearchParams(window.location.search).get("intro") === "1";
+        if (!forceIntro && window.sessionStorage.getItem("escalivo-intro-seen")) {
+          document.documentElement.classList.add("intro-seen");
+        }
+      } catch {
+        // The entrance still works when session storage is unavailable.
+      }
+    </script>
 
-    <!-- NAVIGATION -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <img src="logo.jpg" alt="Escalivo Logo" class="nav-logo-img">
-            </a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+    <title>B2B SaaS Outbound Distribution | Escalivo</title>
+    <meta
+      name="description"
+      content="Escalivo builds signal-driven outbound distribution systems that put qualified B2B SaaS buyers on your calendar."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Escalivo" />
+    <meta name="theme-color" content="#f5f4f0" />
+    <link rel="canonical" href="https://escalivo.com/" />
+    <link rel="icon" type="image/png" href="/assets/escalivo-mark-transparent.png" />
+    <link rel="apple-touch-icon" href="/assets/escalivo-mark-transparent.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-                <li><a href="#cta-section">Contact</a></li>
-            </ul>
-            <a href="https://cal.com/escalivo/discovery-call" target="_blank" class="nav-cta-btn">Book a Call →</a>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Escalivo" />
+    <meta property="og:title" content="A predictable path from market to meeting." />
+    <meta
+      property="og:description"
+      content="Founder-led outbound distribution for B2B SaaS companies ready to build a repeatable pipeline."
+    />
+    <meta property="og:url" content="https://escalivo.com/" />
+    <meta property="og:image" content="https://escalivo.com/assets/escalivo-social.png" />
+    <meta
+      property="og:image:alt"
+      content="Escalivo turns B2B SaaS market signals into qualified booked meetings."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="A predictable path from market to meeting." />
+    <meta
+      name="twitter:description"
+      content="Signal-driven outbound distribution for B2B SaaS companies."
+    />
+    <meta
+      name="twitter:image"
+      content="https://escalivo.com/assets/escalivo-social.png"
+    />
 
-    <!-- HERO SECTION -->
-    <section class="hero" id="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-container">
-            <div class="hero-visual">
-                <img src="booked demos.png" alt="Calendar packed with booked demos" class="hero-demo-img">
-                <p class="hero-visual-caption">[ FOR B2B SAAS FOUNDERS WHO WANT TO SCALE ]</p>
-            </div>
-            <div class="hero-content">
-                <h1 class="hero-headline">B2B SaaS Founders: <span class="hero-highlight">1000 Qualified Booked Demos</span> In The Next 120 Days, Or You Don't Pay.</h1>
-                <p class="hero-sub-bold">Using Our 9-Step Killer Distribution Process</p>
-                <p class="hero-body">Over at Escalivo, our area of expertise is in helping B2B SaaS founders get more paid users. We do this by leveraging proven campaigns that target 100% of the total addressable market on command, therefore filling your calendar consistently with demos.</p>
-                <a href="https://cal.com/escalivo/discovery-call" target="_blank" class="btn btn-cta-hero" id="heroCta">GET STARTED</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section class="about" id="about">
-        <div class="about-container">
-            <div class="about-image-area">
-                <img src="abdelrahman.jpg" alt="Abdelrahman Ahmed - Founder of Escalivo" class="about-photo" id="aboutImage">
-            </div>
-            <div class="about-content">
-                <p class="section-eyebrow">About</p>
-                <h2 class="section-headline">Hi, I'm Abdelrahman!</h2>
-                <p class="about-text">We help B2B SaaS brands build marketing systems that grow. Predictable, consistent & scalable.</p>
-                <p class="about-text">You already have a great product. We make sure the right people find it.</p>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- CTA SECTION -->
-    <section class="cta-section" id="cta-section">
-        <div class="cta-container">
-            <p class="section-eyebrow center light">Let's Talk</p>
-            <h2 class="cta-headline">Ready to Grow?</h2>
-            <p class="cta-body">Book a call. We'll tell you exactly what's holding your growth back.</p>
-            <a href="https://cal.com/escalivo/discovery-call" target="_blank" class="btn btn-primary" id="ctaButton">Book a Call →</a>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer" id="footer">
-        <div class="footer-container">
-            <div class="footer-logo-area">
-                <img src="logo.jpg" alt="Escalivo Logo" class="footer-logo-img">
-                <p class="footer-tagline">B2B SaaS Marketing Agency</p>
-            </div>
-            <div class="footer-links">
-                <a href="#about">About</a>
-
-                <a href="#cta-section">Contact</a>
-                <a href="privacy/">Privacy Policy</a>
-            </div>
-            <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/abdelrahmanahmedeg" target="_blank" aria-label="LinkedIn" class="social-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                </a>
-                <a href="https://x.com/Abdelrhman38385" target="_blank" aria-label="X (Twitter)" class="social-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                </a>
-            </div>
-            <div class="footer-contact">
-                <a href="mailto:hello@escalivo.com" class="footer-email">hello@escalivo.com</a>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 Escalivo. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://escalivo.com/#organization",
+            "name": "Escalivo",
+            "url": "https://escalivo.com/",
+            "logo": "https://escalivo.com/assets/escalivo-mark-transparent.png",
+            "email": "hello@escalivo.com",
+            "founder": {
+              "@type": "Person",
+              "name": "Abdelrahman Ahmed",
+              "url": "https://www.linkedin.com/in/abdelrahmanahmedeg"
+            },
+            "sameAs": [
+              "https://www.linkedin.com/in/abdelrahmanahmedeg",
+              "https://x.com/Abdelrhman38385"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://escalivo.com/#website",
+            "url": "https://escalivo.com/",
+            "name": "Escalivo",
+            "publisher": {
+              "@id": "https://escalivo.com/#organization"
+            },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "Service",
+            "@id": "https://escalivo.com/#service",
+            "name": "B2B SaaS outbound distribution",
+            "description": "A nine-step outbound distribution system spanning ICP and offer alignment, signal discovery, data enrichment, campaign execution, conversation management, meeting routing, and optimization.",
+            "provider": {
+              "@id": "https://escalivo.com/#organization"
+            },
+            "areaServed": "Worldwide",
+            "audience": {
+              "@type": "BusinessAudience",
+              "audienceType": "B2B SaaS founders and revenue teams"
+            },
+            "url": "https://escalivo.com/#method"
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://escalivo.com/#faq-schema",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who is Escalivo built for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "B2B SaaS founders with a validated product, a definable market, and the capacity to take more sales conversations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What makes a demo qualified?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A meeting counts when the prospect matches the buyer criteria agreed before launch and books a conversation with the client team."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does the nine-step system include?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It includes ICP and offer alignment, signal discovery, data and enrichment, audience segmentation, channel and sequence design, campaign execution, conversation management, meeting routing, and continuous optimization."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What happens on the strategy call?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Escalivo reviews the offer, ICP, current channels, and distribution bottleneck to identify a clear diagnosis and an initial campaign angle to test."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-Dd2DwCf1.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CvWKLvaZ.css">
+  </head>
+  <body>
+    <div id="root"><link rel="preload" as="image" href="/assets/escalivo-mark-transparent.png"/><a class="skip-link" href="#main-content">Skip to content</a><div class="page-progress" aria-hidden="true"><span></span></div><div class="brand-intro is-prelude " aria-hidden="true" data-testid="brand-intro"><div class="brand-intro-panel brand-intro-panel-top"></div><div class="brand-intro-panel brand-intro-panel-bottom"></div><div class="brand-intro-content"><p class="brand-intro-index"><span>01</span>B2B SaaS distribution</p><div class="brand-intro-lockup"><img class="brand-intro-mark" src="/assets/escalivo-mark-transparent.png" width="85" height="75" alt=""/><span class="brand-intro-word">Escalivo<sup>™</sup></span></div><p class="brand-intro-tagline">Outbound distribution, engineered to compound.</p><div class="brand-intro-rule"></div><p class="brand-intro-cue">Move to enter<span>or wait a moment</span></p></div></div><header class="site-header "><a class="brand" href="#top" aria-label="Escalivo home"><img src="/assets/escalivo-mark-transparent.png" width="512" height="512" alt=""/><span>Escalivo<sup>™</sup></span></a><nav class="desktop-nav" aria-label="Primary navigation"><a href="#method">Method</a><a href="#about">About</a><a href="#faq">FAQ</a></nav><div class="header-action"><a class="button button-small button-primary" href="https://cal.com/escalivo/discovery-call" target="_blank" rel="noreferrer" data-magnetic="true"><span>Book a strategy call</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg></a></div><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-navigation"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg></button></header><div class="mobile-menu " id="mobile-navigation" aria-hidden="true" inert=""><nav aria-label="Mobile navigation"><a href="#method"><span>01</span> Method</a><a href="#about"><span>02</span> About</a><a href="#faq"><span>03</span> FAQ</a></nav><a class="button button-primary" href="https://cal.com/escalivo/discovery-call" target="_blank" rel="noreferrer" data-magnetic="true"><span>Book a strategy call</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg></a><p>Founder-led outbound distribution for B2B SaaS.</p></div><main id="main-content"><section class="hero-standard" id="top" aria-labelledby="hero-title"><div class="hero"><div class="hero-copy"><div class="reveal" style="--reveal-delay:0ms"><p class="eyebrow"><span></span>For B2B SaaS founders with product–market fit</p></div><div class="reveal" style="--reveal-delay:70ms"><h1 id="hero-title">A predictable path from market to <em>meeting.</em></h1></div><div class="reveal" style="--reveal-delay:130ms"><p class="hero-intro">Escalivo builds and runs the distribution system that puts qualified B2B SaaS buyers on your calendar.</p></div><div class="reveal" style="--reveal-delay:190ms"><p class="hero-guarantee"><strong>1,000 qualified demos in 120 days—</strong><span>or you don’t pay.</span></p></div><div class="reveal" style="--reveal-delay:250ms"><div class="hero-actions"><a class="button button-primary" href="https://cal.com/escalivo/discovery-call" target="_blank" rel="noreferrer" data-magnetic="true"><span>Book a strategy call</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg></a><a class="text-link" href="#method">See the method<!-- --> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></svg></a></div></div><div class="reveal" style="--reveal-delay:310ms"><div class="hero-fit"><p>Built for teams that</p><ul><li><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>Sell to mid-market or enterprise</li><li><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>Have a validated offer</li><li><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>Need a repeatable pipeline</li></ul></div></div></div><div class="reveal  hero-brief" style="--reveal-delay:150ms"><div class="hero-brief-brand" aria-hidden="true"><img src="/assets/escalivo-mark-transparent.png" width="85" height="75" alt=""/></div><p class="hero-brief-label">The Escalivo distribution system</p><h2>From a defined market to qualified conversations.</h2><ol><li><span>01</span><div><strong>Find the right buyers</strong><p>Define the accounts and signals that make outreach timely.</p></div></li><li><span>02</span><div><strong>Start relevant conversations</strong><p>Run coordinated campaigns built around buyer context.</p></div></li><li><span>03</span><div><strong>Turn interest into meetings</strong><p>Qualify and route real intent into your calendar.</p></div></li></ol><div class="hero-brief-footer"><span>One operating system</span><span>Nine visible steps</span></div></div></div></section><section class="operating-strip" aria-label="How Escalivo operates"><div class="strip-heading"><div class="reveal" style="--reveal-delay:0ms"><p>Your product is ready.<br/>Your distribution <em>should be too.</em></p></div></div><div class="principles-grid"><div class="reveal  principle" style="--reveal-delay:0ms"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M232,122H221.8A94.13,94.13,0,0,0,134,34.2V24a6,6,0,0,0-12,0V34.2A94.13,94.13,0,0,0,34.2,122H24a6,6,0,0,0,0,12H34.2A94.13,94.13,0,0,0,122,221.8V232a6,6,0,0,0,12,0V221.8A94.13,94.13,0,0,0,221.8,134H232a6,6,0,0,0,0-12Zm-98,87.76V200a6,6,0,0,0-12,0v9.76A82.09,82.09,0,0,1,46.24,134H56a6,6,0,0,0,0-12H46.24A82.09,82.09,0,0,1,122,46.24V56a6,6,0,0,0,12,0V46.24A82.09,82.09,0,0,1,209.76,122H200a6,6,0,0,0,0,12h9.76A82.09,82.09,0,0,1,134,209.76ZM128,90a38,38,0,1,0,38,38A38,38,0,0,0,128,90Zm0,64a26,26,0,1,1,26-26A26,26,0,0,1,128,154Z"></path></svg><h2>Precision over volume</h2><p>Reach the right buyers with an offer built for their exact context.</p></div><div class="reveal  principle" style="--reveal-delay:70ms"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M238,128a6,6,0,0,1-6,6H203.71l-38.34,76.68A6,6,0,0,1,160,214h-.3a6,6,0,0,1-5.31-3.85L95.51,55.57,61.46,130.48A6,6,0,0,1,56,134H24a6,6,0,0,1,0-12H52.14l38.4-84.48a6,6,0,0,1,11.07.34L160.74,193.1l33.89-67.78A6,6,0,0,1,200,122h32A6,6,0,0,1,238,128Z"></path></svg><h2>Signal-driven</h2><p>Target accounts that fit—and learn from every reply, objection, and meeting.</p></div><div class="reveal  principle" style="--reveal-delay:140ms"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M208,42H48A14,14,0,0,0,34,56v56c0,51.94,25.12,83.4,46.2,100.64,22.73,18.6,45.27,24.89,46.22,25.15a6,6,0,0,0,3.16,0c.95-.26,23.49-6.55,46.22-25.15C196.88,195.4,222,163.94,222,112V56A14,14,0,0,0,208,42Zm2,70c0,37.76-13.94,68.39-41.44,91.06A131.17,131.17,0,0,1,128,225.72a130.94,130.94,0,0,1-40.56-22.66C59.94,180.39,46,149.76,46,112V56a2,2,0,0,1,2-2H208a2,2,0,0,1,2,2ZM172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76Z"></path></svg><h2>Performance-backed</h2><p>The public offer is simple: 1,000 qualified demos in 120 days—or you don’t pay.</p></div><div class="reveal  principle" style="--reveal-delay:210ms"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M222,48V96a6,6,0,0,1-6,6H168a6,6,0,0,1,0-12h33.52L183.47,72a81.51,81.51,0,0,0-57.53-24h-.46A81.5,81.5,0,0,0,68.19,71.28a6,6,0,1,1-8.38-8.58,93.38,93.38,0,0,1,65.67-26.76H126a93.45,93.45,0,0,1,66,27.53l18,18V48a6,6,0,0,1,12,0ZM187.81,184.72a81.5,81.5,0,0,1-57.29,23.34h-.46a81.51,81.51,0,0,1-57.53-24L54.48,166H88a6,6,0,0,0,0-12H40a6,6,0,0,0-6,6v48a6,6,0,0,0,12,0V174.48l18,18.05a93.45,93.45,0,0,0,66,27.53h.52a93.38,93.38,0,0,0,65.67-26.76,6,6,0,1,0-8.38-8.58Z"></path></svg><h2>Built to compound</h2><p>Every campaign improves the targeting, message, and next conversation.</p></div></div></section><section class="method section" id="method" aria-labelledby="method-title"><div class="section-heading method-heading"><div class="reveal" style="--reveal-delay:0ms"><div><p class="eyebrow"><span></span>The method</p><h2 id="method-title">Nine steps. One compounding system.</h2></div></div><div class="reveal" style="--reveal-delay:90ms"><p>A structured path from market signal to qualified meeting—built to learn as it runs.</p></div></div><div class="method-grid"><div class="reveal  method-act" style="--reveal-delay:0ms"><div class="method-topline"><p>Act I</p><span>0<!-- -->1</span></div><div class="method-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M220.06,84a102.06,102.06,0,1,1-24.31-32.27l24-24a6,6,0,0,1,8.48,8.49l-96,96a6,6,0,1,1-8.48-8.49l29.39-29.4a42,42,0,1,0,16.78,31.24,6,6,0,1,1,12-.68A54,54,0,1,1,161.7,85.83l25.54-25.55a89.91,89.91,0,1,0,22,28.93A6,6,0,1,1,220.06,84Z"></path></svg></div><h3>Find the right buyers</h3><ol start="1"><li>ICP &amp; offer alignment</li><li>Signal discovery</li><li>Data &amp; enrichment</li></ol><p class="method-description">Turn a broad market into a sharp list of accounts, people, and reasons to talk now.</p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" class="method-arrow" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg></div><div class="reveal  method-act" style="--reveal-delay:90ms"><div class="method-topline"><p>Act II</p><span>0<!-- -->2</span></div><div class="method-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M216,50H40A14,14,0,0,0,26,64V224a13.88,13.88,0,0,0,8.09,12.69A14.11,14.11,0,0,0,40,238a13.87,13.87,0,0,0,9-3.31l.06-.05L82.23,206H216a14,14,0,0,0,14-14V64A14,14,0,0,0,216,50Zm2,142a2,2,0,0,1-2,2H80a6,6,0,0,0-3.92,1.46L41.26,225.53A2,2,0,0,1,38,224V64a2,2,0,0,1,2-2H216a2,2,0,0,1,2,2Zm-52-80a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,112Zm0,32a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,144Z"></path></svg></div><h3>Start relevant conversations</h3><ol start="4"><li>Audience segmentation</li><li>Channel &amp; sequence design</li><li>Campaign execution</li></ol><p class="method-description">Build coordinated outreach that earns attention without sounding mass-produced.</p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" class="method-arrow" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg></div><div class="reveal  method-act" style="--reveal-delay:180ms"><div class="method-topline"><p>Act III</p><span>0<!-- -->3</span></div><div class="method-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M208,34H182V24a6,6,0,0,0-12,0V34H86V24a6,6,0,0,0-12,0V34H48A14,14,0,0,0,34,48V208a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V48A14,14,0,0,0,208,34ZM48,46H74V56a6,6,0,0,0,12,0V46h84V56a6,6,0,0,0,12,0V46h26a2,2,0,0,1,2,2V82H46V48A2,2,0,0,1,48,46ZM208,210H48a2,2,0,0,1-2-2V94H210V208A2,2,0,0,1,208,210Zm-39.76-86.24a6,6,0,0,1,0,8.48l-48,48a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L116,167.51l43.76-43.75A6,6,0,0,1,168.24,123.76Z"></path></svg></div><h3>Turn interest into meetings</h3><ol start="7"><li>Conversation management</li><li>Meetings &amp; pipeline</li><li>Learning &amp; optimization</li></ol><p class="method-description">Qualify, route, and learn from conversations so the pipeline gets stronger over time.</p></div></div></section><section class="bottleneck section-dark" aria-labelledby="bottleneck-title"><div class="bottleneck-intro"><div class="reveal" style="--reveal-delay:0ms"><p class="eyebrow eyebrow-dark"><span></span>Why growth stalls</p><h2 id="bottleneck-title">Your product is not the bottleneck.<br/><em>Distribution is.</em></h2></div><div class="reveal" style="--reveal-delay:100ms"><p>Escalivo replaces stop-start tactics with an operating system for reaching, learning, and compounding.</p></div></div><div class="bottleneck-diagnostic"><div class="bottleneck-grid" role="group" aria-label="Choose your current distribution bottleneck"><div class="reveal" style="--reveal-delay:0ms"><button type="button" class="bottleneck-item is-active" aria-pressed="true"><span>01</span><div><h3>Referrals don’t compound</h3><p>Good weeks arrive by chance. Quiet weeks have no system underneath them.</p></div><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></svg></button></div><div class="reveal" style="--reveal-delay:60ms"><button type="button" class="bottleneck-item " aria-pressed="false"><span>02</span><div><h3>Outreach loses momentum</h3><p>Campaigns start, stall, and restart before the market has a chance to respond.</p></div><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></svg></button></div><div class="reveal" style="--reveal-delay:120ms"><button type="button" class="bottleneck-item " aria-pressed="false"><span>03</span><div><h3>The wrong people book</h3><p>Calendar volume grows, but decision-makers with a real reason to buy stay absent.</p></div><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></svg></button></div><div class="reveal" style="--reveal-delay:180ms"><button type="button" class="bottleneck-item " aria-pressed="false"><span>04</span><div><h3>No learning loop</h3><p>Replies and objections disappear instead of improving the next message.</p></div><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></svg></button></div></div><aside class="diagnostic-result" aria-live="polite"><p class="diagnostic-label">What this usually signals</p><p class="diagnostic-signal">Demand exists, but the business has no repeatable way to identify and reach the next best account.</p><div><span>First responsible move</span><p>Define one high-fit segment, its strongest buying signals, and a weekly account-creation cadence before adding channels.</p></div><a class="button button-light" href="https://cal.com/escalivo/discovery-call" target="_blank" rel="noreferrer" data-magnetic="true"><span>Map this bottleneck</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg></a><p class="diagnostic-caveat">Directional diagnosis only. The call tests it against your market, offer, and current motion.</p></aside></div></section><section class="founder section" id="about" aria-labelledby="founder-title"><div class="reveal  founder-image-wrap" style="--reveal-delay:0ms"><img src="/assets/abdelrahman-ahmed.webp" width="960" height="960" alt="Abdelrahman Ahmed, founder of Escalivo" loading="lazy"/><div class="founder-image-meta"><span>Founder-led</span><span>Cairo, Egypt</span></div></div><div class="founder-copy"><div class="reveal" style="--reveal-delay:0ms"><p class="eyebrow"><span></span>Founder, Escalivo</p><h2 id="founder-title">Hi, I’m Abdelrahman.</h2><p class="founder-lede">I built Escalivo around a simple belief: a strong product should not depend on luck for distribution.</p><p>We combine precise data, clear messages, and relentless iteration to help the right buyers find you—and give your team a system it can keep learning from.</p><a class="text-link founder-link" href="https://x.com/Abdelrhman38385" target="_blank" rel="noreferrer">Follow Abdelrahman on X<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg></a></div></div></section><section class="diagnosis section" aria-labelledby="diagnosis-title"><div class="reveal  diagnosis-heading" style="--reveal-delay:0ms"><p class="eyebrow"><span></span>Your first 30 minutes</p><h2 id="diagnosis-title">No generic pitch.<br/><em>A useful diagnosis.</em></h2></div><div class="diagnosis-content"><div class="reveal" style="--reveal-delay:0ms"><p>Bring your offer, your current pipeline, and the market you want to own. Escalivo will pressure-test the path between them.</p></div><ul><li class="reveal" style="--reveal-delay:0ms"><span>0<!-- -->1</span><p>A clearer picture of your real distribution bottleneck</p></li><li class="reveal" style="--reveal-delay:70ms"><span>0<!-- -->2</span><p>A sharper view of who to reach and why they would care</p></li><li class="reveal" style="--reveal-delay:140ms"><span>0<!-- -->3</span><p>The first campaign angle Escalivo would test</p></li></ul><div class="reveal" style="--reveal-delay:220ms"><a class="button button-primary" href="https://cal.com/escalivo/discovery-call" target="_blank" rel="noreferrer" data-magnetic="true"><span>Book a strategy call</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg></a><p class="diagnosis-note">No obligation. Come for the clarity.</p></div></div></section><section class="faq section" id="faq" aria-labelledby="faq-title"><div class="reveal  faq-heading" style="--reveal-delay:0ms"><p class="eyebrow"><span></span>FAQ</p><h2 id="faq-title">Common concerns.<br/>Clear answers.</h2></div><div class="faq-list"><div class="reveal" style="--reveal-delay:0ms"><details><summary><span>Who is Escalivo built for?</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg></summary><p>B2B SaaS founders with a validated product, a definable market, and the capacity to take more sales conversations. If you are still searching for product–market fit, the strategy call will tell you quickly whether outbound is premature.</p></details></div><div class="reveal" style="--reveal-delay:40ms"><details><summary><span>What makes a demo “qualified”?</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg></summary><p>A meeting should only count when the prospect matches the buyer criteria agreed before launch and books a conversation with your team. Fit is defined around the role, company profile, segment, and buying context—not just an email reply.</p></details></div><div class="reveal" style="--reveal-delay:80ms"><details><summary><span>What does the nine-step system include?</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg></summary><p>It covers ICP and offer alignment, signal discovery, data and enrichment, audience segmentation, channel and sequence design, campaign execution, conversation management, meeting routing, and continuous optimization.</p></details></div><div class="reveal" style="--reveal-delay:120ms"><details><summary><span>How does the 120-day offer work?</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg></summary><p>Escalivo’s public offer is 1,000 qualified demos in 120 days or you don’t pay. Exact scope, qualification criteria, dependencies, and commercial terms are confirmed in writing before work begins.</p></details></div><div class="reveal" style="--reveal-delay:160ms"><details><summary><span>How soon can campaigns go live?</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg></summary><p>The first priority is getting the market, offer, data, and sending system right. Launch timing depends on your market and current infrastructure; the strategy call is where Escalivo maps the fastest responsible path.</p></details></div><div class="reveal" style="--reveal-delay:200ms"><details><summary><span>What happens on the strategy call?</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg></summary><p>You will look at your ICP, offer, current channels, and the point where growth is getting stuck. The goal is a useful diagnosis and a clear next test—not a generic agency pitch deck.</p></details></div></div></section><section class="final-cta" aria-labelledby="cta-title"><div class="reveal" style="--reveal-delay:0ms"><p class="eyebrow eyebrow-dark"><span></span>The next move</p><h2 id="cta-title">Your next demo is<br/>a system away.</h2></div><div class="reveal  cta-action" style="--reveal-delay:100ms"><p>Find the bottleneck. See the system.<br/>Decide if Escalivo is the right partner.</p><a class="button button-light" href="https://cal.com/escalivo/discovery-call" target="_blank" rel="noreferrer" data-magnetic="true"><span>Book a strategy call</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg></a></div></section></main><footer class="site-footer"><div class="footer-brand"><a class="brand footer-logo" href="#top" aria-label="Escalivo home"><img src="/assets/escalivo-mark-transparent.png" width="512" height="512" alt="" loading="lazy"/><span>Escalivo<sup>™</sup></span></a><p>B2B SaaS outbound distribution, engineered to compound.</p></div><div class="footer-links"><div><p>Navigate</p><a href="#method">Method</a><a href="#about">About</a><a href="#faq">FAQ</a></div><div><p>Connect</p><a href="https://www.linkedin.com/in/abdelrahmanahmedeg" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path></svg> LinkedIn</a><a href="https://x.com/Abdelrhman38385" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z"></path></svg> X</a><a href="mailto:hello@escalivo.com"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"></path></svg> Email</a></div></div><div class="footer-bottom"><p>© 2026 Escalivo. All rights reserved.</p><a href="/privacy.html">Privacy policy</a><span>Built for signal, not noise.</span></div></footer><div class="mobile-sticky-cta"><a class="button button-primary button-small" href="https://cal.com/escalivo/discovery-call" target="_blank" rel="noreferrer" data-magnetic="true"><span>Book a strategy call</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg></a></div></div>
+  </body>
 </html>
