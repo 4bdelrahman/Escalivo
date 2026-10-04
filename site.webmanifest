@@ -1,7 +1,7 @@
-{
+﻿{
   "name": "Escalivo",
   "short_name": "Escalivo",
-  "description": "Signal-driven outbound distribution for B2B SaaS.",
+  "description": "Signal-driven outbound distribution for marketing agencies.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f5f4f0",
